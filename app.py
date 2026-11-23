@@ -2,7 +2,7 @@ import os
 from flask import Flask, jsonify
 
 app = Flask(__name__)
-
+os.environ["MESSAGE"] = "Bonjour depuis la plateforme Render !"
 MESSAGE = os.environ.get(
 "MESSAGE",
 "Bienvenue sur mon application Cloud !"
